@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Execution of suite started]]>
+    </line>
+    <line>
+      <![CDATA[orgnization link clicked]]>
+    </line>
+    <line>
+      <![CDATA[create organization lookup clicked]]>
+    </line>
+    <line>
+      <![CDATA[Organization saved]]>
+    </line>
+    <line>
+      <![CDATA[organization created]]>
+    </line>
+    <line>
+      <![CDATA[contact link clicked]]>
+    </line>
+    <line>
+      <![CDATA[create contact lookup clicked]]>
+    </line>
+    <line>
+      <![CDATA[contact created with org]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-11-19T18:24:15 IST" name="Suite" finished-at="2022-11-19T18:26:44 IST" duration-ms="148134">
+    <groups>
+      <group name="regressionSuite">
+        <method signature="CreateContactWithOrganizationsTest.createOrgnizationTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" name="createOrgnizationTest" class="vTiger.ContactsTests.CreateContactWithOrganizationsTest"/>
+        <method signature="CreateOrgTest.createOrg()[pri:0, instance:vTiger.Organization.CreateOrgTest@2d7275fc]" name="createOrg" class="vTiger.Organization.CreateOrgTest"/>
+        <method signature="TestNGPractice.deleteCustomer()[pri:0, instance:vTiger.Practice.TestNGPractice@564fabc8]" name="deleteCustomer" class="vTiger.Practice.TestNGPractice"/>
+      </group> <!-- regressionSuite -->
+    </groups>
+    <test started-at="2022-11-19T18:24:15 IST" name="Test" finished-at="2022-11-19T18:26:44 IST" duration-ms="148134">
+      <class name="vTiger.Practice.TestNGPractice">
+        <test-method signature="deleteCustomer()[pri:0, instance:vTiger.Practice.TestNGPractice@564fabc8]" started-at="2022-11-19T18:26:44 IST" name="deleteCustomer" finished-at="2022-11-19T18:26:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+      </class> <!-- vTiger.Practice.TestNGPractice -->
+      <class name="vTiger.Organization.CreateOrgTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vTiger.Organization.CreateOrgTest@2d7275fc]" started-at="2022-11-19T18:24:15 IST" name="bsConfig" finished-at="2022-11-19T18:24:15 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.Organization.CreateOrgTest@2d7275fc]" started-at="2022-11-19T18:24:16 IST" name="bcConfig" finished-at="2022-11-19T18:24:53 IST" duration-ms="37713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.Organization.CreateOrgTest@2d7275fc]" started-at="2022-11-19T18:24:54 IST" name="bmConfig" finished-at="2022-11-19T18:25:27 IST" duration-ms="32933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createOrg()[pri:0, instance:vTiger.Organization.CreateOrgTest@2d7275fc]" started-at="2022-11-19T18:25:27 IST" name="createOrg" finished-at="2022-11-19T18:25:49 IST" duration-ms="22820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrg -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.Organization.CreateOrgTest@2d7275fc]" started-at="2022-11-19T18:25:49 IST" name="amConfig" finished-at="2022-11-19T18:26:02 IST" duration-ms="12164" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GANESH', ip: '192.168.36.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [005f7ac6b89ef627b9bbd4a6c453f8fc, clickElement {id=9a1e5491-7a5c-4968-92d1-b65b8917d87a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\GANESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54879/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (005f7ac6b89ef627b9bbd4a6c453f8fc)] -> xpath: //a[text()='Sign Out']]
+Session ID: 005f7ac6b89ef627b9bbd4a6c453f8fc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GANESH', ip: '192.168.36.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [005f7ac6b89ef627b9bbd4a6c453f8fc, clickElement {id=9a1e5491-7a5c-4968-92d1-b65b8917d87a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\GANESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54879/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (005f7ac6b89ef627b9bbd4a6c453f8fc)] -> xpath: //a[text()='Sign Out']]
+Session ID: 005f7ac6b89ef627b9bbd4a6c453f8fc
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at vTiger.ObjectRepository.HomePage.signOutOfApp(HomePage.java:97)
+at vTiger.GenericLibrary.BaseClass.amConfig(BaseClass.java:91)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.Organization.CreateOrgTest@2d7275fc]" started-at="2022-11-19T18:26:02 IST" name="acConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668862562148" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:vTiger.Organization.CreateOrgTest@2d7275fc]" started-at="2022-11-19T18:26:45 IST" name="asConfig" finished-at="2022-11-19T18:26:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asConfig -->
+      </class> <!-- vTiger.Organization.CreateOrgTest -->
+      <class name="vTiger.ContactsTests.CreateContactWithOrganizationsTest">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-11-19T18:26:02 IST" name="bcConfig" finished-at="2022-11-19T18:26:13 IST" duration-ms="11386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-11-19T18:26:13 IST" name="bmConfig" finished-at="2022-11-19T18:26:16 IST" duration-ms="3126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createOrgnizationTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-11-19T18:26:16 IST" name="createOrgnizationTest" finished-at="2022-11-19T18:26:39 IST" duration-ms="23131" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[orgnization link clicked]]>
+            </line>
+            <line>
+              <![CDATA[create organization lookup clicked]]>
+            </line>
+            <line>
+              <![CDATA[Organization saved]]>
+            </line>
+            <line>
+              <![CDATA[organization created]]>
+            </line>
+            <line>
+              <![CDATA[contact link clicked]]>
+            </line>
+            <line>
+              <![CDATA[create contact lookup clicked]]>
+            </line>
+            <line>
+              <![CDATA[contact created with org]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createOrgnizationTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-11-19T18:26:39 IST" name="amConfig" finished-at="2022-11-19T18:26:41 IST" duration-ms="1954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-11-19T18:26:41 IST" name="acConfig" finished-at="2022-11-19T18:26:44 IST" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- vTiger.ContactsTests.CreateContactWithOrganizationsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
